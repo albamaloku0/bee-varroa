@@ -15,7 +15,7 @@ st.set_page_config(
 # ── Ngarkojmë modelin (vetëm një herë) ───────────────────
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("bee_model_final.keras")
+    return tf.keras.models.load_model("bee_model_final.h5")
 
 model = load_model()
 IMG_SIZE = (224, 224)
