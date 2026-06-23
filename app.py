@@ -1,6 +1,7 @@
 
 import streamlit as st
-import tensorflow as tf
+import tf_keras as tf
+from tf_keras.models import load_model as keras_load_model
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -16,7 +17,7 @@ st.set_page_config(
 # ── Ngarkojmë modelin (vetëm një herë) ───────────────────
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("/content/bee_model_final.keras")
+    return model = keras_load_model("bee_model_final.keras")
 
 model = load_model()
 IMG_SIZE = (224, 224)
