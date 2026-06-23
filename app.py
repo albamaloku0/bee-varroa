@@ -16,7 +16,7 @@ st.set_page_config(
 # ── Ngarkojmë modelin (vetëm një herë) ───────────────────
 @st.cache_resource
 def load_model():
-    return model = keras_load_model("bee_model_final.keras")
+    return keras_load_model("bee_model_final.keras")
 
 model = load_model()
 IMG_SIZE = (224, 224)
