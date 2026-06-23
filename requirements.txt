@@ -1,6 +1,0 @@
-streamlit==1.32.0
-keras==3.4.1
-tf-keras==2.16.0
-numpy
-Pillow
-matplotlib
